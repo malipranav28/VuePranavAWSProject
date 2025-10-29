@@ -48,7 +48,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }} # optional: defaults to us-east-1
           SOURCE_DIR: "dist"
-
+      #Comment
       # Clears the Cloudfront cache so new requests will receive the latest version of your app
       - name: Invalidate CloudFront
         uses: chetan/invalidate-cloudfront-action@v2
